@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="myDiv" class="header">
+        <div class="todo-app">
+            <h2>My To Do List</h2>
+
+            <div class="search-row">
+                <input type="text" id="mySearch" placeholder="Search...">
+                <span onclick="searchTask()" class="searchBtn">&#x1F50D;</span>
+            </div>
+
+            <div class="add-row">
+                <input type="text" id="myInput" placeholder="Add here...">
+                <span onclick="addTask()" class="addBtn">Add</span>
+            </div>
+            
+            <ul id="myUL">
+                <li><a href="#">Gym</a><span class="close">&#x00D7;</span></li>
+                <li class="checked"><a href="#">Read a book</a><span class="close">&#x00D7;</span></li>
+                <li><a href="#">Clean the house</a><span class="close">&#x00D7;</span></li>
+                <li><a href="#">Call mom</a><span class="close">&#x00D7;</span></li>
+                <li><a href="#">Practice guitar</a><span class="close">&#x00D7;</span></li>
+            </ul>          
+
+        </div>    
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
